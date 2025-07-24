@@ -6,8 +6,7 @@
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -56,6 +55,18 @@
     max-width: 1140px;
     margin: 30px auto;
 }
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.banner_left{
+    width: 50%;
+    padding-left: 20px;
+}
 
 .t_1st{
     color: #000000;
@@ -69,10 +80,16 @@
 }
 
 .banner_img{
-    max-width: 100%;
+    width: 50%;
+}
+.banner_img img{
+    width: 100%;
+    height: auto;
+    display: block;
+
 }
 
-.plants{
+.plant_section{
     max-width: 890px;
     margin: 0 auto;
     text-align: center;
@@ -87,6 +104,30 @@
 }
 .plant{
     color: #000000;
+}
+
+/* Rsponsive section */
+@media screen and (max-width: 576px){
+    .banner{
+        flex-direction: column-reverse;
+        
+    }
+    .banner_left{
+        width: 100%; 
+        padding: 10px;
+    }
+    .banner_img{
+        width: 100%;
+    }
+    .banner_img img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .nav_items{
+        visibility: hidden;
+    }
 }
 
 

@@ -17,12 +17,13 @@
             </div>
                 <ul class="inter-normal display_flex">
                     
-                    <li class="nav_items"><span class="items">Home</span></li>
-                    <li class="nav_items gray_1"><span class="items">Shop</span></li>
-                    <li class="nav_items gray_1"><span class="items">About us</span></li>
-                    <li class="nav_items"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</li>
+                    <li class="nav_items">Home</li>
+                    <li class="nav_items gray_1">Shop</li>
+                    <li class="nav_items gray_1">About us</li>
+                    <li class=" icon nav_items"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</li>
                 </ul>
          </nav>
+        
          <div class="banner">
             <div class="banner_left">
                 <h2 class="banner_title noto-serif-normal"><span class="t_1st">ALWAYS </span><span class="t_2nd">FRESH <br>FLOWER</span></h2>
@@ -93,22 +94,49 @@
          </div>
 
         </section>
-        <section class="plant_lover_section">
-            
-            <div class="flower_store">
-                <img src="images/flower-store.png" alt="">
-            </div>
-            
-            <div class="store_sms">
-                <h3 class="sms_title noto-serif-normal font_design_2">Flower & Plants Lover</h3>
-                    <ul class="sms_description inter-normal font_design_1">
-                        <li>Indulge your senses with the beauty and <br> fragrance of our fresh flower shop. From classic <br> roses to exotic blooms, we offer a wide variety <br> of fresh.</li>
-                        <li>Indulge your senses with the beauty and <br> fragrance of our fresh flower shop. From classic <br> roses to exotic blooms, we offer a wide variety <br> of fresh.</li>
-                        <li>Indulge your senses with the beauty and <br> fragrance of our fresh flower shop. From classic <br> roses to exotic blooms, we offer a wide variety <br> of fresh.</li>
-                        
-                    </ul>
-            </div>
-        </section>
+
+
+          <section class="max-w-7xl mx-auto px-4 py-10 mt-20">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+
+      <!-- Left: Image -->
+      <div class="w-full md:w-1/2 relative">
+        <!-- Top-Right Overlay Image -->
+        <img src="./images/trusted-badge.png" alt="Badge"
+          class="w-40 h-40 absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-10" />
+
+        <!-- Background/Main Image -->
+        <img src="./images/flower-store.png" alt="Flower Store" class="w-full rounded-lg shadow-lg" />
+      </div>
+      
+      <!-- Right: Text + List -->
+      <div class="w-full md:w-1/2">
+        <h1 class="text-4xl font-bold mb-6">Flower & Plants <br> Lover</h1>
+        <ul class="list-disc list-inside space-y-4 inter-normal font_design_1">
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+            blooms, we offer a wide variety of fresh.</li>
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+            blooms, we offer a wide variety of fresh.</li>
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+            blooms, we offer a wide variety of fresh.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+        
+         <section class="text-center mt-10">
+    <h1 class="text-6xl font-bold mb-6"><span class="text-orange-600">Latest</span> Deals</h1>
+    <p class="inter-normal font_design_1">Indulge your senses with the beauty and fragrance of our fresh flower
+      shop. From <br> classic roses to exotic
+      blooms, we
+      offer a wide variety of fresh.</p>
+  </section>
+
         
 
           <section class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -151,20 +179,21 @@
     </div>
   </section>
 
-  <section class="join_section">
-            <div class="join">
-                 <h3 class="join_title noto-serif-normal font_design_2">Join the colorful Bunch</h3>
-            <div class="form display_flex">
-                <form action=""><input type="email" name="" placeholder="Write email" id=""></form>
-                <button class="btn_join inter-normal">Subscribe</button>
-            </div>
-            </div>
-        </section>
-
-
-
-
-
+   <section>
+    <div class="relative">
+      <img src="./images/news-letter-bg.png" alt="">
+      <div class="max-w-md mx-auto absolute inset-0 flex flex-col items-center justify-center text-center ">
+        <h1 class=" text-white text-4xl font-bold mb-4">Join the colorful Bunch</h1>
+        <div class="flex items-center border border-white-600 rounded overflow-hidden">
+          <input type="email" placeholder="Write email" class="w-full px-4 py-2 focus:outline-none" />
+          <button class="bg-orange-500 text-white px-4 py-2 hover:bg-pink-600 transition">
+            subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
     </main>
       <footer class="bg-gray-100 py-10">

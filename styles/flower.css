@@ -157,15 +157,19 @@
     background-image: url(../images/news-letter-bg.png);
     text-align: center;
    display: grid;
-    
+     
 }
 .join_title{
     color: #FFFFFF;
 }
 .form{
-    justify-content: center;
+    display: flex;
     align-items: center;
-    padding-bottom: 193px;
+    border-radius: 4px;
+    overflow: hidden;
+    justify-content: center;
+    padding: 199px;
+    
 }
 
 
@@ -223,6 +227,9 @@
         height: auto;
         display: block;
     }
+    .sample_flower{
+        margin: 10px 20px;
+    }
     .store_sms{
         width: 100%;
     }
@@ -230,6 +237,13 @@
         display: block;
         max-width: 100%;
       
+    }
+    .sms_description{
+        margin: auto;
+    }
+
+    .form{
+        max-width: 100%;
     }
     
 

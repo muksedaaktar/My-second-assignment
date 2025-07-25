@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -58,8 +59,7 @@
 .banner{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    
     
 }
 
@@ -90,9 +90,12 @@
 }
 
 .plant_section{
-    max-width: 890px;
+    max-width: 1140px;
     margin: 0 auto;
     text-align: center;
+}
+.plant_section_up{
+    margin-bottom: 45px;
 }
 
 .plant_title{
@@ -105,16 +108,95 @@
 .plant{
     color: #000000;
 }
+.flower_img{
+    width: 100%;
+}
+
+.flower_name{
+    font-weight: 500;
+    font-size: 1.37rem;
+    color: #111111;
+    
+}
+.flower_button{
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 19px 80px;
+    width: 100%;
+    border: none;
+}
+.flower_price{
+    font-weight: 700;
+    font-size: 1.37rem;
+}
+.sample_flower{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.flower_store{
+    width: 50%;
+}
+.flower_store img{
+    width: 100%;
+}
+.plant_lover_section{
+    display: flex;
+    margin: 210px auto;
+    max-width: 1140px;
+    gap: 60px;
+}
+
+.join_section{
+    width: 1140px;
+    
+    margin: 0 auto;
+    background-image: url(../images/news-letter-bg.png);
+    text-align: center;
+   display: grid;
+    
+}
+.join_title{
+    color: #FFFFFF;
+}
+.form{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 193px;
+}
+
+
+.btn_join{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-weight: 600px;
+    font-size: 1rem;
+    padding: 19px 53px;
+    border: none;
+
+}
+
 
 /* Rsponsive section */
 @media screen and (max-width: 576px){
     .banner{
         flex-direction: column-reverse;
+        max-width: 100%;
+        margin: 0 auto;
         
+    }
+   
+    html, body{
+        overflow-x: hidden;
     }
     .banner_left{
         width: 100%; 
         padding: 10px;
+        height: auto;
+        text-align: left;
     }
     .banner_img{
         width: 100%;
@@ -124,10 +206,33 @@
         height: auto;
         display: block;
     }
-
-    .nav_items{
-        visibility: hidden;
+    .banner_title{
+        margin-right: 50px;
     }
+    .sample_flower{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plant_lover_section{
+        flex-direction: column;
+    }
+    .flower_store{
+        width: 100%;
+    }
+    .flower_store img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .store_sms{
+        width: 100%;
+    }
+    .sms_title{
+        display: block;
+        max-width: 100%;
+      
+    }
+    
+
 }
 
 
